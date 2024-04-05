@@ -12,11 +12,13 @@ Using the capabilities of Ultimaker Cura and a Raspberry Pi (the 4B model in my 
 - Raspberry Pi compatible touchscreen (opitonal)
 ## Installation
 1. Plug in the MicroSD card to the computer and run RPi Imager
-1.1. Click on choose device -> the model Pi you are using
-1.2. Click on choose OS -> Other raspberry Pi OS -> Raspberry Pi OS Lite
-1.3. Click on choose storage -> the name of the MicroSD card
-1.4. Click next
-1.5. Click edit properties -> Edit and change the settings as needed (SSH is optional, but is not used)
+  1.1. Click on choose device -> the model Pi you are using
+  1.2. Click on choose OS -> Other raspberry Pi OS -> Raspberry Pi OS Lite
+  1.3. Click on choose storage -> the name of the MicroSD card
+  1.4. Click next
+  1.5. Click edit properties -> Edit and change the settings as needed (SSH is optional, but is not used)
 2. If you have a touchscreen, look for the setup instructions online. The model and instructions I used can be found [here](https://www.raspberrypi.com/documentation/accessories/display.html)
 3. Power the Raspberry Pi with the USB-C cable and (if you do not have a touchscreen) plug in the HDMI micro cord into your monitor
-4. Login to your account and 
+4. Login to your account in the terminal
+5. Type this command: sudo apt update && sudo apt upgrade ; sudo apt install git
+6. Finally, type this command and follow the prompts: 
