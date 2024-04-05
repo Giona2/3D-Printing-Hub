@@ -20,5 +20,7 @@ Using the capabilities of Ultimaker Cura and a Raspberry Pi (the 4B model in my 
 2. If you have a touchscreen, look for the setup instructions online. The model and instructions I used can be found [here](https://www.raspberrypi.com/documentation/accessories/display.html)
 3. Power the Raspberry Pi with the USB-C cable and (if you do not have a touchscreen) plug in the HDMI micro cord into your monitor
 4. Login to your account in the terminal
-5. Type this command: sudo apt update && sudo apt upgrade ; sudo apt install git
-6. Finally, type this command and follow the prompts: git clone https://github.com/Giona2/3D-Printing-Hub.git ; chmod +x 3D-Printing-Hub/setup.sh ; 3D-Printing-Hub/setup.sh
+5. Type this command:
+  - sudo apt update && sudo apt upgrade ; sudo apt install git
+6. Finally, type this command and follow the prompts:
+  - git clone https://github.com/Giona2/3D-Printing-Hub.git ; chmod +x 3D-Printing-Hub/setup.sh ; 3D-Printing-Hub/setup.sh
