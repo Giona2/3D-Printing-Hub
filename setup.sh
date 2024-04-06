@@ -1,3 +1,5 @@
+#!/bin/bash
+
 user=$(ls /home)
 
 apt update
