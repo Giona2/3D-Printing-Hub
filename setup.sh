@@ -1,6 +1,8 @@
 #!/bin/bash
 
-userhome=/home/$(ls /home)/
+user=$(ls /home)
+$repo=/home/$user/3D-Printing-Hub
+bin_utils=$repo/bin_utils
 
 # Confirm install
 echo
@@ -30,6 +32,13 @@ nala remove -y openbox
 # Install necessary packages
 nala install -y xorg xterm
 nala install -y cura
+
+# Run binary utilities
+$bin_utils/enable_auto_login -- $user
+$bin_utils/init_xserver
+
+# Clean up
+rm -r $repo
 
 # Confirm reboot
 echo -n "Would you like to reboot the system? [Y/n] "
