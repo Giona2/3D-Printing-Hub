@@ -34,7 +34,9 @@ nala install -y xorg xterm
 nala install -y cura
 
 # Run binary utilities
+chmod +x $bin_utils/enable_auto_login
 $bin_utils/enable_auto_login -- $user
+chmod +x $bin_utils/enable_auto_login
 $bin_utils/init_xserver
 
 # Clean up
