@@ -22,14 +22,14 @@ fi
 
 # Upgrade system and install nala
 apt update && apt upgrade
-apt install nala
+apt install -y nala
 
 # Remove clashing packages
-nala remove openbox
+nala remove -y openbox
 
 # Install necessary packages
-nala install xorg xterm
-wget -P $userhome https://github.com/Ultimaker/Cura/releases/download/5.7.0/UltiMaker-Cura-5.7.0-linux-X64.AppImage
+nala install -y xorg xterm
+nala install -y cura
 
 # Confirm reboot
 echo -n "Would you like to reboot the system? [Y/n] "
