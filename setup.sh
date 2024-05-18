@@ -1,7 +1,7 @@
 #!/bin/bash
 
 user=$(ls /home)
-$repo=/home/$user/3D-Printing-Hub
+repo=/home/$user/3D-Printing-Hub
 bin_utils=$repo/bin_utils
 
 # Confirm install
