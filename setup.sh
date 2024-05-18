@@ -35,9 +35,9 @@ nala install -y cura
 
 # Run binary utilities
 chmod +x $bin_utils/enable_auto_login
-$bin_utils/enable_auto_login $user
+$bin_utils/enable_auto_login -- $user
 chmod +x $bin_utils/init_xserver
-$bin_utils/init_xserver
+$bin_utils/init_xserver $user
 
 # Clean up
 rm -r $repo
