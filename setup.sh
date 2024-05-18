@@ -23,7 +23,7 @@ if [ "$confirmed_install" != "Y" ] && [ "$confirmed_install" != "y" ]; then
 fi
 
 # Upgrade system and install nala
-apt update && apt upgrade
+apt -y update && apt -y upgrade
 apt install -y nala
 
 # Remove clashing packages
