@@ -28,6 +28,10 @@ sudo apt upgrade
 sudo apt install git
 ```
 7. Finally, type this command and follow the prompts:
-  git clone https://github.com/Giona2/3D-Printing-Hub.git ; chmod +x 3D-Printing-Hub/setup.sh ; sudo 3D-Printing-Hub/setup.sh
+```bash
+git clone https://github.com/Giona2/3D-Printing-Hub.git
+chmod +x 3D-Printing-Hub/setup.sh
+sudo 3D-Printing-Hub/setup.sh
+```
 8. When promped, reboot your system. If you accidentally clicked no, run "sudo reboot" and type in your password
 9. When Cura opens, connect the raspberry pi to your printer and run the setup processes
